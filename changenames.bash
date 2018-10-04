@@ -1,6 +1,5 @@
-# simple bash utilty to change filenames in target dir from AA.BB.CC.abc to CC.BB.AA.abc
-target="target"
-cd $target
+# simple bash utilty to change filenames in [ arg 1 ] dir from AA.BB.CC.abc to CC.BB.AA.abc
+cd $1
 for filename in *
 do 
 	splittedNames=(${filename//./ }) # this split the string by '.'
